@@ -52,7 +52,7 @@ links:
   - email:
       name: Email
       show: true
-      href: mailto:info@m1well.de
+      href: mailto:info@m1well.com
       icon: fas fa-envelope
 
 additional_html: "- Michael Wellner - <br>passionate backend software developer from the south of germany.<br>
