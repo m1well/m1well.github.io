@@ -10,7 +10,7 @@ sass:
 name: m1well
 subtitle: Software Developer
 
-title:
+title: m1well
 
 robots:
     description: Michael Wellner, Software Developer.
@@ -21,7 +21,8 @@ url: https://m1well.github.io
 
 baseurl: '/'
 
-avatar: "https://avatars2.githubusercontent.com/u/20413533?s=460&v=4"
+avatar: "assets/images/avatar/m1well-avatar.png"
+logo: "assets/images/logo/m1well-logo.png"
 
 links:
   - xing:

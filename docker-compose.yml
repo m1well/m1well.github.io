@@ -1,5 +1,8 @@
 version: '3.5'
 
+networks:
+  m1well-jekyll-network:
+
 services:
 
   m1well-jekyll-page:
@@ -10,3 +13,5 @@ services:
     volumes:
       - ".:/srv/jekyll"
     command: jekyll serve --watch --incremental
+    networks:
+      - m1well-jekyll-network

@@ -1,0 +1,154 @@
+---
+### m1well sass ###
+---
+
+$glass-panel-spacing: 60px;
+$glass-pane-color: rgba(0, 0, 0, 0.45);
+$white-color: rgba(255, 255, 255, 0.85);
+$white-shadow: rgba(255, 255, 255, 0.3);
+$smartphone-max-width: 575.98px;
+$background-original: url('../images/background/background-original.jpg') no-repeat center top fixed;
+$background-phone: url('../images/background/background-phone.jpg') no-repeat center top fixed;
+$font-size-original: 1.8em;
+$font-size-original-2: 1.4em;
+$font-size-phone: 1.0em;
+
+@font-face {
+  font-family: 'Exo 2';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../webfonts/exo-2-v4-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Exo 2'), local('Exo2-Regular'),
+       url('../fonts/exo-2-v4-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/exo-2-v4-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/exo-2-v4-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/exo-2-v4-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/exo-2-v4-latin-regular.svg#Exo2') format('svg'); /* Legacy iOS */
+}
+
+html, body {
+  font-family: 'Exo 2', sans-serif;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body.fullscreen-background {
+  background: $background-original;
+  @media (max-width: $smartphone-max-width) {
+    background: $background-phone;
+  }
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+div.glass-panel {
+  background-color: $glass-pane-color;
+  margin-bottom: $glass-panel-spacing;
+  margin-top: $glass-panel-spacing;
+  min-width: 280px;
+}
+
+div.core-content {
+  color: $white-color;
+}
+
+/* --------- Avatar ---------------------------------------------------------------------------- */
+
+#avatar {
+  width: 220px;
+  border: 3px solid;
+  border-color: $white-color;
+  @media (max-width: $smartphone-max-width) {
+    width: 110px;
+    border: 3px solid;
+  }
+  border-radius: 100%;
+}
+
+/* --------- Logo ---------------------------------------------------------------------------- */
+
+#logo {
+  width: 160px;
+  @media (max-width: $smartphone-max-width) {
+    width: 90px;
+  }
+}
+
+/* --------- Title / Subtitle ------------------------------------------------------------------ */
+
+h1 {
+  font-size: 3em;
+  @media (max-width: $smartphone-max-width) {
+    font-size: 2em;
+  }
+}
+h3 {
+  font-size: $font-size-original;
+  padding-top: 7px;
+  @media (max-width: $smartphone-max-width) {
+    font-size: $font-size-phone;
+    padding-top: 5px;
+  }
+}
+
+/* --------- Links -------------------------------------------------------------------- */
+
+div.row.links {
+  > div {
+    white-space: nowrap;
+    padding: 0;
+  }
+  a {
+    color: $white-color;
+    border-radius: 100%;
+    border: 2px solid;
+    border-color: $white-color;
+    display: inline-block;
+    font-size: $font-size-original;
+    overflow: hidden;
+    box-shadow: 0 5px 8px 0 $white-shadow, 0 6px 20px 0 $white-shadow;
+    @media (max-width: $smartphone-max-width) {
+      border-radius: 5px;
+      font-size: $font-size-phone;
+      width: 90%;
+      margin: 0 5%;
+    }
+    > i {
+      display: inline-block;
+      margin: 12px;
+      @media (max-width: $smartphone-max-width) {
+        margin: 12px;
+      }
+    }
+  }
+}
+
+/* --------- additional HTML ------------------------------------------------------------------------ */
+
+div.additional-html {
+  color: $white-color;
+  text-align: center;
+  padding: 10px 30px;
+  max-width: 580px;
+  font-size: $font-size-original-2;
+  @media (max-width: $smartphone-max-width) {
+    font-size: $font-size-phone;
+  }
+}
+
+/* --------- Footer ---------------------------------------------------------------------------- */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  height: $glass-panel-spacing;
+  line-height: $glass-panel-spacing - 2 * 10px;
+  padding: 10px 0;
+  width: 100%;
+  color: $white-color;
+}
