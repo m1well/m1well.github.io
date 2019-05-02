@@ -1,29 +1,14 @@
----
-### m1well sass ###
----
-
-$glass-panel-spacing: 60px;
-$glass-pane-color: rgba(0, 0, 0, 0.45);
-$white-color: rgba(255, 255, 255, 0.85);
-$white-shadow: rgba(255, 255, 255, 0.3);
-$smartphone-max-width: 575.98px;
-$background-original: url('../images/background/background-original.jpg') no-repeat center top fixed;
-$background-phone: url('../images/background/background-phone.jpg') no-repeat center top fixed;
-$font-size-original: 1.8em;
-$font-size-original-2: 1.4em;
-$font-size-phone: 1.0em;
-
 @font-face {
   font-family: 'Exo 2';
   font-style: normal;
   font-weight: 400;
-  src: url('../webfonts/exo-2-v4-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/exo-2-v4-latin-regular.eot'); /* IE9 Compat Modes */
   src: local('Exo 2'), local('Exo2-Regular'),
-       url('../fonts/exo-2-v4-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/exo-2-v4-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/exo-2-v4-latin-regular.woff') format('woff'), /* Modern Browsers */
-       url('../fonts/exo-2-v4-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/exo-2-v4-latin-regular.svg#Exo2') format('svg'); /* Legacy iOS */
+  url('../fonts/exo-2-v4-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/exo-2-v4-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+  url('../fonts/exo-2-v4-latin-regular.woff') format('woff'), /* Modern Browsers */
+  url('../fonts/exo-2-v4-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('../fonts/exo-2-v4-latin-regular.svg#Exo2') format('svg'); /* Legacy iOS */
 }
 
 html, body {
@@ -87,6 +72,7 @@ h1 {
     font-size: 2em;
   }
 }
+
 h3 {
   font-size: $font-size-original;
   padding-top: 7px;

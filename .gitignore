@@ -1,11 +1,10 @@
 ### macOS
 .DS_Store
 
+### IntelliJ
+.idea
+
 ### jekyll
 /_site/
 /_support/
 /.jekyll-metadata
-
-### dev files
-.dev
-.test
