@@ -13,6 +13,11 @@
     show: true
     href: https://twitter.com/m1well
     icon: fab fa-twitter
+- devto:
+    name: dev
+    show: true
+    href: https://dev.to/m1well
+    icon: fab fa-dev
 - github:
     name: GitHub
     show: true
