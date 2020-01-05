@@ -1,0 +1,17 @@
+- name: agile development
+  active: true
+
+- name: microservices
+  active: true
+
+- name: databases
+  active: true
+
+- name: project management
+  active: true
+
+- name: app monitoring
+  active: true
+
+- name: scripting
+  active: true

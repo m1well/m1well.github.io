@@ -1,0 +1,26 @@
+<div class="row justify-content-center">
+  <div class="col-12 my-3" id="description">
+    - Michael Wellner - <br>
+    passionate software developer from the south of germany<br>
+
+    <u>skills:</u>
+    {{ site.data.skills | where: "active", true | map: "name" | join: " | " }}
+    <br>
+
+    <u>main technologies:</u>
+    {{ site.data.technologies | where: "active", true
+    | where: "cluster", "main" | map: "name" | join: " | " }}
+    <br>
+
+    <u>tools:</u>
+    {{ site.data.technologies | where: "active", true |
+    where: "cluster", "tools" | map: "name" | join: " | " }}
+    <br>
+
+    <u>os:</u>
+    {{ site.data.technologies | where: "active", true |
+    where: "cluster", "os" | map: "name" | join: " | " }}
+    <br>
+
+  </div>
+</div>

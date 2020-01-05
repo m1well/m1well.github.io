@@ -1,0 +1,75 @@
+- name: java
+  cluster: main
+  active: true
+
+- name: spring
+  cluster: main
+  active: true
+
+- name: spring-boot
+  cluster: main
+  active: true
+
+- name: spring-cloud
+  cluster: main
+  active: true
+
+- name: rest
+  cluster: main
+  active: true
+
+- name: sql
+  cluster: main
+  active: true
+
+- name: jpa
+  cluster: main
+  active: true
+
+- name: junit
+  cluster: main
+  active: true
+
+- name: angular
+  cluster: main
+  active: true
+
+- name: bash
+  cluster: main
+  active: true
+
+- name: docker
+  cluster: tools
+  active: true
+
+- name: git
+  cluster: tools
+  active: true
+
+- name: cloud foundry
+  cluster: main
+  active: true
+
+- name: intellij
+  cluster: tools
+  active: true
+
+- name: gradle
+  cluster: tools
+  active: true
+
+- name: maven
+  cluster: tools
+  active: true
+
+- name: jenkins
+  cluster: tools
+  active: true
+
+- name: macos
+  cluster: os
+  active: true
+
+- name: linux
+  cluster: os
+  active: true

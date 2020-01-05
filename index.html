@@ -2,40 +2,22 @@
 permalink: /
 layout: default
 ---
-<div class="glass-panel">
-  <div class="container core-content pb-4">
+<div class="container-fluid" id="site-content">
+  <div class="row" id="glass-panel">
+    <div class="col">
 
-    <div class="row pt-sm-4">
-      <div class="col text-center">
-        <img id="avatar" class="my-3 my-sm-4" alt="{{ site.name }}"
-             src=" {% if site.avatar %}
-                {{ site.baseurl }}{{ site.avatar }}
-              {% endif %}">
-      </div>
+      {% include presentation.html %}
+
+      {% include link-icons.html %}
+
+      {% include description.html %}
+
+      <button onclick="scrollToTop()" id="back-to-top">^</button>
+
     </div>
-
-    <div class="row pt-sm-4">
-      <div class="col text-center">
-        <img id="logo" alt="{{ site.name }}"
-             src=" {% if site.logo %}
-                {{ site.baseurl }}{{ site.logo }}
-              {% endif %}">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col">
-        {% if site.subtitle %}
-        <h3 class="text-center">{{ site.subtitle }}</h3>
-        {% endif %}
-      </div>
-    </div>
-
-    {% include link-icons.html %}
-
-    {% include additional.html %}
-
-    <button onclick="topFunction()" id="back-to-top">^</button>
-
   </div>
 </div>
+
+<footer class="page-footer" id="site-footer">
+  {% include footer.html %}
+</footer>

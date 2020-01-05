@@ -24,7 +24,3 @@ baseurl: '/'
 
 avatar: "assets/images/avatar/m1well-avatar.png"
 logo: "assets/images/logo/m1well-logo.png"
-
-additional_html: "- Michael Wellner - <br>passionate backend software developer from the south of germany.<br>
-    <u>skills:</u> backend development | scrum | microservices | databases | project management | app monitoring | scripting<br>
-    <u>main technologies:</u> java | spring-boot | spring-cloud | cloud foundry | rest | sql | docker | git | bash | gradle | intellij | macos | linux<br>"

@@ -31,21 +31,19 @@ body.fullscreen-background {
   background-size: cover;
 }
 
-div.glass-panel {
-  background-color: $glass-pane-color;
-  margin-bottom: $glass-panel-spacing;
-  margin-top: $glass-panel-spacing;
-  min-width: 280px;
-}
-
-div.core-content {
+#site-content {
+  min-width: 360px;
   color: $white-color;
 }
 
-/* --------- Avatar ---------------------------------------------------------------------------- */
+#glass-panel {
+  background-color: $glass-pane-color;
+  margin-top: $glass-panel-spacing;
+  margin-bottom: $glass-panel-spacing;
+}
 
 #avatar {
-  width: 220px;
+  width: 200px;
   border: 3px solid;
   border-color: $white-color;
   @media (max-width: $smartphone-max-width) {
@@ -55,16 +53,12 @@ div.core-content {
   border-radius: 100%;
 }
 
-/* --------- Logo ---------------------------------------------------------------------------- */
-
 #logo {
   width: 160px;
   @media (max-width: $smartphone-max-width) {
     width: 90px;
   }
 }
-
-/* --------- Title / Subtitle ------------------------------------------------------------------ */
 
 h1 {
   font-size: 3em;
@@ -74,17 +68,15 @@ h1 {
 }
 
 h3 {
-  font-size: $font-size-original;
+  font-size: $font-size-text;
   padding-top: 7px;
   @media (max-width: $smartphone-max-width) {
-    font-size: $font-size-phone;
+    font-size: $font-size-text-phone;
     padding-top: 5px;
   }
 }
 
-/* --------- Links -------------------------------------------------------------------- */
-
-div.row.links {
+#links {
   > div {
     white-space: nowrap;
     padding: 0;
@@ -95,46 +87,67 @@ div.row.links {
     border: 2px solid;
     border-color: $white-color;
     display: inline-block;
-    font-size: $font-size-original;
+    font-size: $font-size-icons;
     overflow: hidden;
     box-shadow: 0 5px 8px 0 $white-shadow, 0 6px 20px 0 $white-shadow;
+    text-decoration: none;
     @media (max-width: $smartphone-max-width) {
       border-radius: 5px;
-      font-size: $font-size-phone;
-      width: 90%;
-      margin: 0 5%;
+      font-size: $font-size-icons-phone;
+      width: 94%;
+      margin: 0 3%;
     }
     > i {
       display: inline-block;
       margin: 12px;
+      @media (max-width: $tablet-max-width) {
+        margin: 9px;
+      }
       @media (max-width: $smartphone-max-width) {
-        margin: 12px;
+        margin: 13px;
       }
     }
   }
 }
 
-/* --------- additional HTML ------------------------------------------------------------------------ */
-
-div.additional-html {
+#description {
   color: $white-color;
   text-align: center;
   padding: 10px 30px;
-  max-width: 580px;
-  font-size: $font-size-original-2;
+  max-width: 680px;
+  font-size: $font-size-text;
   @media (max-width: $smartphone-max-width) {
-    font-size: $font-size-phone;
+    font-size: $font-size-text-phone;
   }
 }
 
-/* --------- Footer ---------------------------------------------------------------------------- */
-
-footer {
-  position: absolute;
-  bottom: 0;
-  height: $glass-panel-spacing;
-  line-height: $glass-panel-spacing - 2 * 10px;
-  padding: 10px 0;
-  width: 100%;
+#site-footer {
   color: $white-color;
+  font-weight: bold;
+  min-width: 330px;
+  width: 100%;
+  position: absolute;
+  bottom: 3px;
+  font-size: $font-size-footer;
+  @media (max-width: $smartphone-max-width) {
+    color: $black-color;
+    font-size: $font-size-footer-phone;
+  }
+}
+
+#back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 27px;
+  right: 20px;
+  z-index: 99;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  background-color: $blue-color;
+  color: $white-color;
+  cursor: pointer;
+  padding: 5px 12px 1px 12px;
+  border-radius: 5px;
 }

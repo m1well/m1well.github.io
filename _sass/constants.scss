@@ -1,11 +1,17 @@
 $glass-panel-spacing: 60px;
 $glass-pane-color: rgba(0, 0, 0, 0.45);
 $white-color: rgba(255, 255, 255, 0.85);
+$black-color: rgba(10, 10, 10, 0.85);
 $blue-color: rgba(40, 100, 200, 0.85);
 $white-shadow: rgba(255, 255, 255, 0.3);
 $smartphone-max-width: 575.98px;
+$tablet-max-width: 991.98px;
 $background-original: url('../images/background/background-original.jpg') no-repeat center top fixed;
 $background-phone: url('../images/background/background-phone.jpg') no-repeat center top fixed;
-$font-size-original: 1.8em;
-$font-size-original-2: 1.4em;
-$font-size-phone: 1.0em;
+$font-size-icons: 1.4em;
+$font-size-icons-phone: 1.1em;
+$font-size-text: 1.4em;
+$font-size-text-phone: 1.0em;
+$font-size-footer: 1.1em;
+$font-size-footer-phone: 0.8em;
+
