@@ -14,8 +14,8 @@ subtitle: Software Developer
 title: m1well
 
 robots:
-  description: Michael Wellner, Software Developer.
-  keywords: softare, development, backend, spring, spring boot, spring cloud, bash, database
+  description: Michael Wellner, Software Developer
+  keywords: softare, development, backend, fullstack, spring, spring boot, spring cloud, bash, database, angular
   crawl: index,follow
 
 url: https://m1well.github.io

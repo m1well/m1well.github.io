@@ -1,0 +1,14 @@
+<div class="row justify-content-center row-width-one" id="skills">
+  <div class="col-10 pt-1 px-0 px-md-2">
+    <div class="row justify-content-center">
+      {% assign skills = site.data.skills | where: "active", true %}
+      {% for sk in skills %}
+      <div class="col-12 col-md-3 mb-1">
+        <div class="card">
+          <div class="skills-title">{{ sk.name }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

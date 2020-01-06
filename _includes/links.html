@@ -1,0 +1,16 @@
+<div class="row justify-content-center" id="links">
+  <div class="col-10 pt-1 px-0 px-md-2">
+    <div class="row justify-content-center">
+      {% for link in site.data.links %}
+      {% if link.show %}
+      <div class="col-12 col-sm mb-2 px-1 text-sm-center">
+        <a onclick="" href="{{ link.href }}">
+          <i class="{{ link.icon }} fa-fw"></i>
+          <span class="d-inline d-sm-none">{{ link.name }}</span>
+        </a>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>

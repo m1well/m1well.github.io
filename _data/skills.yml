@@ -10,7 +10,7 @@
 - name: project management
   active: true
 
-- name: app monitoring
+- name: clean code
   active: true
 
 - name: scripting

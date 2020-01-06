@@ -20,19 +20,26 @@ html {
   min-height: 100%;
 }
 
-body.fullscreen-background {
-  background: $background-original;
-  @media (max-width: $smartphone-max-width) {
-    background: $background-phone;
-  }
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+html::before {
+  content: ' ';
+  display: block;
+  background-image: $background-original;
+  background-position: center;
   background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: -10;
+  @media (max-width: $x-small-max-width) {
+    background-image: $background-phone;
+  }
 }
 
 #site-content {
-  min-width: 360px;
   color: $white-color;
 }
 
@@ -43,35 +50,28 @@ body.fullscreen-background {
 }
 
 #avatar {
-  width: 200px;
+  width: 190px;
   border: 3px solid;
   border-color: $white-color;
-  @media (max-width: $smartphone-max-width) {
-    width: 110px;
+  @media (max-width: $x-small-max-width) {
+    width: 120px;
     border: 3px solid;
   }
   border-radius: 100%;
 }
 
 #logo {
-  width: 160px;
-  @media (max-width: $smartphone-max-width) {
-    width: 90px;
+  width: 170px;
+  @media (max-width: $x-small-max-width) {
+    width: 100px;
   }
 }
 
-h1 {
-  font-size: 3em;
-  @media (max-width: $smartphone-max-width) {
-    font-size: 2em;
-  }
-}
-
-h3 {
-  font-size: $font-size-text;
+#header-text {
+  font-size: $font-size-header;
   padding-top: 7px;
-  @media (max-width: $smartphone-max-width) {
-    font-size: $font-size-text-phone;
+  @media (max-width: $x-small-max-width) {
+    font-size: $font-size-header-phone;
     padding-top: 5px;
   }
 }
@@ -83,6 +83,7 @@ h3 {
   }
   a {
     color: $white-color;
+    background-color: $glass-pane-color-2;
     border-radius: 100%;
     border: 2px solid;
     border-color: $white-color;
@@ -91,55 +92,62 @@ h3 {
     overflow: hidden;
     box-shadow: 0 5px 8px 0 $white-shadow, 0 6px 20px 0 $white-shadow;
     text-decoration: none;
-    @media (max-width: $smartphone-max-width) {
+    @media (max-width: $x-small-max-width) {
       border-radius: 5px;
       font-size: $font-size-icons-phone;
-      width: 94%;
-      margin: 0 3%;
+      width: 95%;
+      margin: 0 2%;
     }
     > i {
       display: inline-block;
       margin: 12px;
-      @media (max-width: $tablet-max-width) {
+      @media (max-width: $small-max-width) {
         margin: 9px;
       }
-      @media (max-width: $smartphone-max-width) {
+      @media (max-width: $x-small-max-width) {
         margin: 13px;
       }
     }
   }
 }
 
-#description {
+#about {
   color: $white-color;
+  font-size: $font-size-text;
   text-align: center;
   padding: 10px 30px;
   max-width: 680px;
-  font-size: $font-size-text;
-  @media (max-width: $smartphone-max-width) {
+  @media (max-width: $x-small-max-width) {
     font-size: $font-size-text-phone;
+  }
+  a {
+    color: $white-color;
+    display: inline-block;
+    text-decoration: none;
+    > i {
+      display: inline-block;
+      margin: 3px;
+    }
   }
 }
 
 #site-footer {
   color: $white-color;
-  font-weight: bold;
-  min-width: 330px;
   width: 100%;
   position: absolute;
-  bottom: 3px;
+  bottom: 8px;
   font-size: $font-size-footer;
-  @media (max-width: $smartphone-max-width) {
-    color: $black-color;
+  @media (max-width: $x-small-max-width) {
     font-size: $font-size-footer-phone;
+    color: $black-color;
   }
 }
 
 #back-to-top {
   display: none;
   position: fixed;
-  bottom: 27px;
-  right: 20px;
+  bottom: 25px;
+  right: 10px;
   z-index: 99;
   font-size: 20px;
   font-weight: bold;
@@ -150,4 +158,124 @@ h3 {
   cursor: pointer;
   padding: 5px 12px 1px 12px;
   border-radius: 5px;
+}
+
+.card {
+  background-color: $glass-pane-color-2;
+  padding: 3%;
+}
+.skills-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: $font-size-text * 0.7;
+  padding: 0 0 2px 0;
+  line-height: 15px;
+  @media (max-width: $small-max-width) {
+    line-height: 5px;
+  }
+  @media (max-width: $x-small-max-width) {
+    font-size: $font-size-text-phone;
+  }
+}
+.techs-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: $font-size-text * 0.7;
+  padding: 0 0 2px 0;
+  border-bottom: 1px solid $white-color;
+  @media (max-width: $x-small-max-width) {
+    font-size: $font-size-text-phone;
+  }
+}
+.first-card {
+  padding-left: 7%;
+  padding-right: 1%;
+  @media (max-width: $small-max-width) {
+    padding: 0;
+  }
+}
+.middle-card {
+  padding-left: 1%;
+  padding-right: 1%;
+  @media (max-width: $small-max-width) {
+    padding: 0;
+  }
+}
+.last-card {
+  padding-left: 1%;
+  padding-right: 7%;
+  @media (max-width: $small-max-width) {
+    padding: 0;
+  }
+}
+
+.progress-title{
+  font-size: 85%;
+  font-weight: bold;
+  color: $white-color;
+  margin: 0 0 7px;
+}
+.progress{
+  height: 10px;
+  background: $white-color;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 10px;
+  overflow: visible;
+}
+.progress .progress-bar{
+  box-shadow: none;
+  position: relative;
+  -webkit-animation: animate-positive 3s;
+  animation: animate-positive 4s;
+}
+.progress-bar{
+  background: $blue-color-progress;
+}
+.progress .progress-bar:after{
+  content: "";
+  display: block;
+  border: 15px solid transparent;
+  border-bottom: 20px solid transparent;
+  position: absolute;
+  top: -25px;
+  right: -7px;
+}
+.progress.blue .progress-bar:after{
+  border-bottom-color: $blue-color;
+}
+@-webkit-keyframes animate-positive{
+  0% { width: 0; }
+}
+@keyframes animate-positive{
+  0% { width: 0; }
+}
+
+.hr-text {
+  line-height: 1em;
+  position: relative;
+  outline: 0;
+  border: 0;
+  color: black;
+  text-align: center;
+  height: 1.5em;
+  margin-top: 43px;
+  &:before {
+    content: '';
+    background: linear-gradient(to right, transparent, $blue-color, transparent);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 4px;
+  }
+  &:after {
+    content: attr(line-text);
+    position: relative;
+    display: inline-block;
+    padding: 0 .5em;
+    line-height: 1.6em;
+    color: $white-color;
+    background-color: $blue-color;
+  }
 }

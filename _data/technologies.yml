@@ -1,75 +1,122 @@
+# ---- development
+
 - name: java
-  cluster: main
   active: true
-
-- name: spring
-  cluster: main
-  active: true
-
-- name: spring-boot
-  cluster: main
-  active: true
-
-- name: spring-cloud
-  cluster: main
-  active: true
-
-- name: rest
-  cluster: main
-  active: true
+  cluster: development
+  level: 7
 
 - name: sql
-  cluster: main
   active: true
-
-- name: jpa
-  cluster: main
-  active: true
-
-- name: junit
-  cluster: main
-  active: true
-
-- name: angular
-  cluster: main
-  active: true
+  cluster: development
+  level: 9
 
 - name: bash
-  cluster: main
   active: true
+  cluster: development
+  level: 6
+
+- name: javascript
+  active: true
+  cluster: development
+  level: 3
+
+- name: typescript
+  active: true
+  cluster: development
+  level: 5
+
+# ---- framework
+
+- name: spring
+  active: true
+  cluster: framework
+  level: 7
+
+- name: spring-boot
+  active: true
+  cluster: framework
+  level: 8
+
+- name: spring-cloud
+  active: true
+  cluster: framework
+  level: 5
+
+- name: junit/mockito
+  active: true
+  cluster: framework
+  level: 6
+
+- name: jpa
+  active: true
+  cluster: framework
+  level: 5
+
+- name: rest
+  active: true
+  cluster: framework
+  level: 9
+
+- name: angular
+  active: true
+  cluster: framework
+  level: 4
+
+# ---- tool
 
 - name: docker
-  cluster: tools
+  cluster: tool
   active: true
+  level: 9
 
 - name: git
-  cluster: tools
+  cluster: tool
   active: true
+  level: 10
 
-- name: cloud foundry
-  cluster: main
+- name: gradle/maven
+  cluster: tool
   active: true
+  level: 7
+
+- name: node/npm
+  cluster: tool
+  active: true
+  level: 3
 
 - name: intellij
-  cluster: tools
+  cluster: tool
   active: true
-
-- name: gradle
-  cluster: tools
-  active: true
-
-- name: maven
-  cluster: tools
-  active: true
+  level: 8
 
 - name: jenkins
-  cluster: tools
+  cluster: tool
   active: true
+  level: 5
+
+- name: prometheus/grafana
+  cluster: tool
+  active: true
+  level: 6
+
+# ---- os-plattform
 
 - name: macos
-  cluster: os
+  cluster: os-plattform
   active: true
+  level: 7
 
 - name: linux
-  cluster: os
+  cluster: os-plattform
   active: true
+  level: 6
+
+- name: cloud foundry
+  cluster: os-plattform
+  active: true
+  level: 7
+
+- name: kubernetes
+  cluster: os-plattform
+  active: true
+  level: 2

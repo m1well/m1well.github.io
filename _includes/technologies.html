@@ -1,0 +1,62 @@
+<div class="row justify-content-center" id="skills">
+
+  <div class="col-10 col-md-3 mb-2 first-card">
+    <div class="card">
+      <h3 class="techs-title">development</h3>
+      {% assign development = site.data.technologies | where: "active", true | where: "cluster", "development" %}
+      {% for tech in development %}
+      {% assign percentage = 100 | divided_by: 10 | times: tech.level %}
+      <h4 class="progress-title">{{ tech.name }}</h4>
+      <div class="progress blue">
+        <div class="progress-bar" style="width: {{ percentage }}%;">
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="col-10 col-md-3 mb-2 middle-card">
+    <div class="card">
+      <h3 class="techs-title">framework</h3>
+      {% assign framework = site.data.technologies | where: "active", true | where: "cluster", "framework" %}
+      {% for tech in framework %}
+      {% assign percentage = 100 | divided_by: 10 | times: tech.level %}
+      <h4 class="progress-title">{{ tech.name }}</h4>
+      <div class="progress blue">
+        <div class="progress-bar" style="width: {{ percentage }}%;">
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="col-10 col-md-3 mb-2 middle-card">
+    <div class="card">
+      <h3 class="techs-title">tool</h3>
+      {% assign tool = site.data.technologies | where: "active", true | where: "cluster", "tool" %}
+      {% for tech in tool %}
+      {% assign percentage = 100 | divided_by: 10 | times: tech.level %}
+      <h4 class="progress-title">{{ tech.name }}</h4>
+      <div class="progress blue">
+        <div class="progress-bar" style="width: {{ percentage }}%;">
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="col-10 col-md-3 mb-2 last-card">
+    <div class="card">
+      <h3 class="techs-title">os / plattform</h3>
+      {% assign os-plattform = site.data.technologies | where: "active", true | where: "cluster", "os-plattform" %}
+      {% for tech in os-plattform %}
+      {% assign percentage = 100 | divided_by: 10 | times: tech.level %}
+      <h4 class="progress-title">{{ tech.name }}</h4>
+      <div class="progress blue">
+        <div class="progress-bar" style="width: {{ percentage }}%;">
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

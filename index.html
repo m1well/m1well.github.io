@@ -4,17 +4,31 @@ layout: default
 ---
 <div class="container-fluid" id="site-content">
   <div class="row" id="glass-panel">
+
     <div class="col">
 
       {% include presentation.html %}
 
-      {% include link-icons.html %}
+      <hr class="hr-text" line-text="skills">
 
-      {% include description.html %}
+      {% include skills.html %}
 
-      <button onclick="scrollToTop()" id="back-to-top">^</button>
+      <hr class="hr-text" line-text="main technologies">
+
+      {% include technologies.html %}
+
+      <hr class="hr-text" line-text="links">
+
+      {% include links.html %}
+
+      <hr class="hr-text" line-text="about">
+
+      {% include about.html %}
+
+      <button onclick="scrollToTop(); return false" id="back-to-top">^</button>
 
     </div>
+
   </div>
 </div>
 
