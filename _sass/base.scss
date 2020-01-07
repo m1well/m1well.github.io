@@ -102,10 +102,10 @@ html::before {
       display: inline-block;
       margin: 12px;
       @media (max-width: $small-max-width) {
-        margin: 9px;
+        margin: 10px;
       }
       @media (max-width: $x-small-max-width) {
-        margin: 13px;
+        margin: 10px 15px;
       }
     }
   }
@@ -116,19 +116,46 @@ html::before {
   font-size: $font-size-text;
   text-align: center;
   padding: 10px 30px;
-  max-width: 680px;
+  max-width: 650px;
   @media (max-width: $x-small-max-width) {
     font-size: $font-size-text-phone;
   }
-  a {
+  h4 {
+    margin: 10px 0 3px 0;
+    font-weight: bold;
+    font-size: 96%;
+  }
+  .about-link {
     color: $white-color;
     display: inline-block;
     text-decoration: none;
+    background-color: $glass-pane-color-2;
+    border-radius: 5%;
+    margin-bottom: 3px;
+    border: 2px solid;
+    border-color: $white-color;
+    width: 270px;
+    overflow: hidden;
+    box-shadow: 0 5px 8px 0 $white-shadow, 0 6px 20px 0 $white-shadow;
+    @media (max-width: $x-small-max-width) {
+      width: 230px;
+    }
     > i {
       display: inline-block;
       margin: 3px;
     }
   }
+  #privacy-arrow {
+    padding-right: 17px;
+  }
+  .github-privacy-link {
+    color: $white-color;
+    text-decoration: underline;
+  }
+}
+
+#toggler {
+  cursor: pointer;
 }
 
 #site-footer {

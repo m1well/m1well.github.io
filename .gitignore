@@ -8,3 +8,6 @@
 /_site/
 /_support/
 /.jekyll-metadata
+
+### pngs
+/assets/images/**/*.png

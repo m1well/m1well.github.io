@@ -1,27 +1,41 @@
-window.onscroll = function () {
-  scrollFunction()
-};
+$(document).ready(function () {
+  $('#back-to-top').hide();
 
-function scrollFunction() {
-  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-    document.getElementById("back-to-top").style.display = "block";
-  } else {
-    document.getElementById("back-to-top").style.display = "none";
-  }
-}
+  $(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 10) {
+        $('#back-to-top').fadeIn();
+      } else {
+        $('#back-to-top').fadeOut();
+      }
+    });
 
-function scrollToTop() {
-  const position = document.body.scrollTop || document.documentElement.scrollTop;
-  let scrollAnimation = 0;
-  if (position) {
-    window.scrollBy(0, -Math.max(1, Math.floor(position / 10)));
-    scrollAnimation = setTimeout("scrollToTop()", 20);
-  } else {
-    clearTimeout(scrollAnimation);
-  }
-}
+    $('#back-to-top').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 900);
+      return false;
+    });
+  });
 
-let xmlHttp = new XMLHttpRequest();
-xmlHttp.open('GET', 'https://hitcounter.pythonanywhere.com/count', false);
-xmlHttp.send(null);
-console.log(xmlHttp.responseText);
+  $('#collapse').hide();
+  $('#toggler').click(function(){
+    const arrow = $('#privacy-arrow-icon');
+    if (arrow.hasClass('fa-chevron-down')) {
+      arrow.removeClass('fa-chevron-down').addClass('fa-chevron-up');
+    } else {
+      arrow.removeClass('fa-chevron-up').addClass('fa-chevron-down');
+    }
+    $('#collapse').toggle();
+  });
+
+});
+
+$(window).bind('orientationchange', function (event) {
+  location.reload();
+});
+
+$.get('https://hitcounter.pythonanywhere.com/count', function (data) {
+  $('.result').html(data);
+  console.log(data);
+});

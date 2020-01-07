@@ -35,7 +35,7 @@
 - name: spring-boot
   active: true
   cluster: framework
-  level: 8
+  level: 9
 
 - name: spring-cloud
   active: true
