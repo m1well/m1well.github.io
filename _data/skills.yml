@@ -7,6 +7,9 @@
 - name: databases
   active: true
 
+- name: fullstack
+  active: true
+
 - name: project management
   active: true
 
@@ -14,4 +17,7 @@
   active: true
 
 - name: scripting
+  active: true
+
+- name: further education
   active: true

@@ -13,17 +13,22 @@
 - name: bash
   active: true
   cluster: development
-  level: 6
+  level: 7
 
-- name: javascript
+- name: javascript/ES6
   active: true
   cluster: development
-  level: 3
+  level: 4
 
 - name: typescript
   active: true
   cluster: development
-  level: 5
+  level: 6
+
+- name: groovy
+  active: true
+  cluster: development
+  level: 4
 
 # ---- framework
 
@@ -47,7 +52,7 @@
   cluster: framework
   level: 6
 
-- name: jpa
+- name: jpa/hibernate
   active: true
   cluster: framework
   level: 5
@@ -60,29 +65,29 @@
 - name: angular
   active: true
   cluster: framework
-  level: 4
+  level: 7
 
 # ---- tool
 
 - name: docker
   cluster: tool
   active: true
-  level: 9
+  level: 8
 
 - name: git
   cluster: tool
   active: true
-  level: 10
+  level: 9
 
 - name: gradle/maven
   cluster: tool
   active: true
   level: 7
 
-- name: node/npm
+- name: npm
   cluster: tool
   active: true
-  level: 3
+  level: 5
 
 - name: intellij
   cluster: tool
@@ -92,19 +97,24 @@
 - name: jenkins
   cluster: tool
   active: true
-  level: 5
+  level: 6
 
 - name: prometheus/grafana
   cluster: tool
   active: true
-  level: 6
+  level: 5
+
+- name: postman/newman
+  cluster: tool
+  active: true
+  level: 7
 
 # ---- os-plattform
 
 - name: macos
   cluster: os-plattform
   active: true
-  level: 7
+  level: 8
 
 - name: linux
   cluster: os-plattform
