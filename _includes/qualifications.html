@@ -1,0 +1,21 @@
+<div class="row justify-content-center">
+  <div class="col-10 px-0">
+    <div class="row justify-content-center">
+      {% assign qualifications = site.data.qualifications | where: "active", true %}
+      {% for quali in qualifications %}
+      <div class="col-12 col-md-6 p-1">
+        <div class="card">
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-8 m-1 m-md-0">
+              <div class="skills-title">{{ quali.name }}</div>
+            </div>
+            <div class="col-12 col-md-4 m-1 m-md-0">
+              <div class="skills-title">{{ quali.info }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>

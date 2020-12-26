@@ -1,0 +1,19 @@
+- name: 'angular & typescript intensive course'
+  info: '(angular.de) [2020]'
+  active: true
+
+- name: 'cloud foundry certified developer'
+  info: '(linux foundation) [2019]'
+  active: true
+
+- name: 'ISTQB certified tester - fd. lvl.'
+  info: '(iSQI) [2017]'
+  active: true
+
+- name: 'IREB certified requirements engineer - fd. lvl.'
+  info: '(iSQI) [2016]'
+  active: true
+
+- name: 'certified six sigma green belt'
+  info: '(TEQ) [2012]'
+  active: true

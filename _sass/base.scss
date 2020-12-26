@@ -189,7 +189,7 @@ html::before {
 
 .card {
   background-color: $glass-pane-color-2;
-  padding: 3%;
+  padding: 2%;
 }
 .skills-title {
   font-weight: bold;
@@ -212,27 +212,6 @@ html::before {
   border-bottom: 1px solid $white-color;
   @media (max-width: $x-small-max-width) {
     font-size: $font-size-text-phone;
-  }
-}
-.first-card {
-  padding-left: 7%;
-  padding-right: 1%;
-  @media (max-width: $small-max-width) {
-    padding: 0;
-  }
-}
-.middle-card {
-  padding-left: 1%;
-  padding-right: 1%;
-  @media (max-width: $small-max-width) {
-    padding: 0;
-  }
-}
-.last-card {
-  padding-left: 1%;
-  padding-right: 7%;
-  @media (max-width: $small-max-width) {
-    padding: 0;
   }
 }
 

@@ -15,7 +15,7 @@
   cluster: development
   level: 7
 
-- name: javascript/ES6
+- name: javascript
   active: true
   cluster: development
   level: 4
@@ -23,7 +23,7 @@
 - name: typescript
   active: true
   cluster: development
-  level: 6
+  level: 7
 
 - name: groovy
   active: true
@@ -47,6 +47,11 @@
   cluster: framework
   level: 5
 
+- name: spring-cloud-netflix
+  active: true
+  cluster: framework
+  level: 8
+
 - name: junit/mockito
   active: true
   cluster: framework
@@ -57,22 +62,12 @@
   cluster: framework
   level: 5
 
-- name: rest
-  active: true
-  cluster: framework
-  level: 9
-
 - name: angular
   active: true
   cluster: framework
   level: 7
 
 # ---- tool
-
-- name: docker
-  cluster: tool
-  active: true
-  level: 8
 
 - name: git
   cluster: tool
@@ -82,12 +77,12 @@
 - name: gradle/maven
   cluster: tool
   active: true
-  level: 7
+  level: 8
 
 - name: npm
   cluster: tool
   active: true
-  level: 5
+  level: 7
 
 - name: intellij
   cluster: tool
@@ -104,29 +99,39 @@
   active: true
   level: 5
 
-- name: postman/newman
-  cluster: tool
-  active: true
-  level: 7
-
-# ---- os-plattform
+# ---- os-runtime-database
 
 - name: macos
-  cluster: os-plattform
+  cluster: os-runtime-database
   active: true
   level: 8
 
 - name: linux
-  cluster: os-plattform
+  cluster: os-runtime-database
   active: true
   level: 6
 
-- name: cloud foundry
-  cluster: os-plattform
+- name: docker/docker-compose
+  cluster: os-runtime-database
   active: true
-  level: 7
+  level: 8
+
+- name: cloud foundry
+  cluster: os-runtime-database
+  active: true
+  level: 6
 
 - name: kubernetes
-  cluster: os-plattform
+  cluster: os-runtime-database
   active: true
   level: 2
+
+- name: mysql
+  active: true
+  cluster: os-runtime-database
+  level: 7
+
+- name: postgresql
+  active: true
+  cluster: os-runtime-database
+  level: 5
