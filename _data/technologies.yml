@@ -13,44 +13,34 @@
 - name: bash
   active: true
   cluster: development
-  level: 7
+  level: 8
 
 - name: javascript
   active: true
   cluster: development
-  level: 4
+  level: 5
 
 - name: typescript
   active: true
   cluster: development
-  level: 7
+  level: 6
 
-- name: groovy
+- name: python
   active: true
   cluster: development
-  level: 4
+  level: 3
 
 # ---- framework
-
-- name: spring
-  active: true
-  cluster: framework
-  level: 7
 
 - name: spring-boot
   active: true
   cluster: framework
-  level: 9
+  level: 8
 
 - name: spring-cloud
   active: true
   cluster: framework
-  level: 5
-
-- name: spring-cloud-netflix
-  active: true
-  cluster: framework
-  level: 8
+  level: 6
 
 - name: junit/mockito
   active: true
@@ -60,12 +50,22 @@
 - name: jpa/hibernate
   active: true
   cluster: framework
-  level: 5
+  level: 7
 
 - name: angular
   active: true
   cluster: framework
-  level: 7
+  level: 8
+
+- name: vue
+  active: true
+  cluster: framework
+  level: 5
+
+- name: svelte
+  active: true
+  cluster: framework
+  level: 3
 
 # ---- tool
 
@@ -74,7 +74,7 @@
   active: true
   level: 9
 
-- name: gradle/maven
+- name: maven/gradle
   cluster: tool
   active: true
   level: 8
@@ -92,12 +92,22 @@
 - name: jenkins
   cluster: tool
   active: true
-  level: 6
+  level: 7
+
+- name: nginx
+  cluster: tool
+  active: true
+  level: 5
 
 - name: prometheus/grafana
   cluster: tool
   active: true
   level: 5
+
+- name: vim/ideavim
+  cluster: tool
+  active: true
+  level: 4
 
 # ---- os-runtime-database
 
@@ -124,14 +134,14 @@
 - name: kubernetes
   cluster: os-runtime-database
   active: true
-  level: 2
+  level: 3
 
-- name: mysql
+- name: mysql/mariadb
   active: true
   cluster: os-runtime-database
-  level: 7
+  level: 8
 
 - name: postgresql
   active: true
   cluster: os-runtime-database
-  level: 5
+  level: 7
