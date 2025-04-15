@@ -5,9 +5,10 @@
 .idea
 
 ### jekyll
-/_site/
-/_support/
-/.jekyll-metadata
+_site
+_support
+.jekyll-metadata
+.jekyll-cache
 
 ### pngs
-/assets/images/**/*.png
+assets/images/**/*.png

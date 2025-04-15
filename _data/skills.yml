@@ -10,14 +10,8 @@
 - name: fullstack
   active: true
 
-- name: project management
-  active: true
-
 - name: clean code
   active: true
 
 - name: scripting
-  active: true
-
-- name: further education
   active: true

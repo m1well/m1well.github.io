@@ -1,17 +1,10 @@
-version: '3.5'
-
-networks:
-  m1well-jekyll-network:
-
 services:
 
   m1well-jekyll-page:
     container_name: m1well-jekyll-page
-    image: jekyll/jekyll:pages
+    image: mrxder/jekyll-docker-arm64:latest
     ports:
       - "4000:4000"
     volumes:
-      - ".:/srv/jekyll"
-    command: jekyll serve --watch --incremental
-    networks:
-      - m1well-jekyll-network
+      - ".:/var/jekyll"
+    command: jekyll serve --watch --incremental --host=0.0.0.0

@@ -1,32 +1,22 @@
-- name: Xing
-  show: true
-  href: https://www.xing.com/profile/Michael_Wellner5/
-  icon: fab fa-xing
-
 - name: LinkedIn
   show: true
   href: https://linkedin.com/in/michael-wellner/
   icon: fab fa-linkedin
-
-- name: Twitter
-  show: true
-  href: https://twitter.com/m1well
-  icon: fab fa-twitter
-
-- name: DEV
-  show: true
-  href: https://dev.to/m1well
-  icon: fab fa-dev
 
 - name: GitHub
   show: true
   href: https://github.com/m1well
   icon: fab fa-github
 
-- name: Stack Overflow
+- name: DEV
   show: true
-  href: https://stackoverflow.com/u/8344100
-  icon: fab fa-stack-overflow
+  href: https://dev.to/m1well
+  icon: fab fa-dev
+
+- name: Xing
+  show: true
+  href: https://www.xing.com/profile/Michael_Wellner5/
+  icon: fab fa-xing
 
 - name: Email
   show: true

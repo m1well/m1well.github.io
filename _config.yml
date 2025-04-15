@@ -18,7 +18,7 @@ robots:
   keywords: softare, development, backend, fullstack, spring, spring boot, spring cloud, bash, database, angular
   crawl: index,follow
 
-url: https://m1well.github.io
+url: https://m1well.com
 
 baseurl: '/'
 
